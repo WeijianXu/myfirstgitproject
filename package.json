@@ -1,0 +1,29 @@
+{
+  "name": "nodedoor",
+  "version": "1.0.0",
+  "description": "open the nodejs's door.",
+  "main": "index.js",
+  "dependencies": {
+    "formidable": "^1.0.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeijianXu/myfirstgitproject.git"
+  },
+  "keywords": [
+    "nodejs",
+    "git",
+    "nodedoor"
+  ],
+  "author": "WeijianXu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeijianXu/myfirstgitproject/issues"
+  },
+  "homepage": "https://github.com/WeijianXu/myfirstgitproject#readme"
+}
