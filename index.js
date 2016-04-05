@@ -8,10 +8,12 @@ var router = require("./router");
 var requestHandlers = require("./requestHandlers");
 
 // 将不同的URL映射到相同的请求处理程序上
-var handle = {};
-handle["/"]= requestHandlers.start;
-handle["/start"]= requestHandlers.start;
-handle["/upload"]= requestHandlers.upload;
+var handle = {
+	"/": requestHandlers.start,
+	"/start": requestHandlers.start,
+	"/upload": requestHandlers.upload,
+	"/show": requestHandlers.show
+};
 
 // 将路由函数作为参数传递到服务器的start()函数
 server.start(router.route, handle);
