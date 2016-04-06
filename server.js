@@ -7,8 +7,8 @@ function start(route, handle){
   function onRequest(request, response){
     var pathname = url.parse(request.url).pathname;
     console.log("Request for "+ pathname +" received.");
-
-    var postData ="";
+    route(handle, pathname, response, request);
+    /*var postData ="";
     request.setEncoding("utf8");
 
     //  将data和end事件的回调函数直接放在服务器中，在data事件回调中收集所有的POST数据；
@@ -19,8 +19,8 @@ function start(route, handle){
 
     // 将请求路由的调用移到end事件处理程序中，以确保它只会当所有数据接收完毕后才触发，并且只触发一次
     request.addListener("end",function(){
-      route(handle, pathname, response, postData);
-    });
+      route(handle, pathname, response, request, postData);
+    });*/
 
     //route(handle, pathname, response);
 
