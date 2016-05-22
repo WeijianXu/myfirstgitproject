@@ -17,6 +17,7 @@ function start(response, request, postData){
     '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />',
     '</head>',
     '<body>',
+    '<ul><li name="homepage">首页</li><li name="control">控制台</li></ul>',
     '<form action="/upload" enctype="multipart/form-data" method="post">',
       '<input type="file" name="upload" multiple="multiple"><br>',
       '<input type="submit" value="Upload file" />',
